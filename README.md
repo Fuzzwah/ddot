@@ -1,3 +1,6 @@
+## Update from Fuzzwah (2024)
+* Tiny change to switch from deprecated Pandas function, to get DDOT working with Pandas 2.0.3
+
 # Update in v1.0.1 (2020 summer)
 
 * Maintain the compatibility with HiView, which has improved significantly after the original DDOT publication
