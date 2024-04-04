@@ -2340,9 +2340,9 @@ class Ontology(object):
 
         df = pd.DataFrame(columns=['Parent','Child',self.EDGETYPE_ATTR])
         if term_2_term:
-            df = df.append(self._hierarchy_to_pandas(), ignore_index=True)
+            df.loc[len(df)] = self._hierarchy_to_pandas()
         if gene_2_term:
-            df = df.append(self._mapping_to_pandas(), ignore_index=True)
+            df.loc[len(df)] = self._mapping_to_pandas()
 
         if edge_attr and self.edge_attr.shape[1] > 0:
             if edge_attr==True:
